@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+#menu-h ul{
+    text-align: center;
+    list-style: none;
+    padding: 3px;
+    background-color: rgb(68, 39, 197);
+}
+#menu-h ul li{
+   display: inline;
+   
+}
+#menu-h ul li a{
+  color: #eee;
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px;
+  transition: background 0.3s;
+
+}
+#menu-h ul li a:hover{
+    background-color: rgb(0, 174, 255);
+}
+.header-container{
+    height:100vh;
+    width: 100vw;
+    background-color: rgb(68, 39, 197);
+    background-image: url('img/Design\ sem\ nome\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    box-sizing: border-box;
+    padding: 0 112px;
+    position: relative;  
+    margin: auto;    
+}
+.social-midia{
+  
+    margin-top: 1rem;
+    display: left;
+    position: absolute;
+
+}
+.social-midia a{
+    text-decoration: none;
+    color: #000000;
+    padding: 1rem 4rem;
+    border: 1px solid #000000;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 5s ease-in-out;  
+}
+a:hover{
+    background-color: rgb(85, 179, 255);
+
+}
+/*Cards*/
+.container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+    
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(12, 130, 160);
+    background-image: url(img/paimon.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: #000000;
+    cursor: pointer   ;
+    transition: 0.5s ease-in-out;
+}
+.card-text{
+    width: 40%;
+    letter-spacing: 1px;
+    color: #444;
+}
+.card-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.card-wrapper::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid #fff;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.card-wrapper h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+}
+.card-wrapper p{
+    font-size: 0;
+    visibility: visible;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5 ease-in-out;
+}
+.card:hover{
+    filter: unset;
+}
+.card:hover >.cardwrapper::before{
+    height:200px; 
+    width: 200px;
+    opacity: 1;
+
+}
+.card:hover>.card-wrapper p{
+opacity: 1;
+visibility: visible;
+font-size: 14px;
+
+}
+/*Footer*/
+.footer{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(68, 39, 197);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    
+}
