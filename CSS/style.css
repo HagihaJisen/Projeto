@@ -5,17 +5,20 @@
     font-family: Helvetica;
 }
 /* Cabeçalho*/
-#menu-h ul{
-    text-align: center;
+.menu-h ul{
     list-style: none;
-    padding: 0;
-    background-color: rgb(68, 39, 197);
+    padding: 3px;
+    color: rgb(255, 249, 249);
+    background-color: rgb(115, 11, 201);
+    position: relative;
+    
 }
-#menu-h ul li{
-   display: inline;
+.menu-h ul li{
+    display: inline;
+    position: relative;
    
 }
-#menu-h ul li a{
+.menu-h ul li a{
   color: #eee;
   display: inline-block;
   text-decoration: none;
@@ -23,9 +26,33 @@
   transition: background 0.3s;
 
 }
-#menu-h ul li a:hover{
-    background-color: rgb(0, 174, 255);
+.menu-h ul li a:hover{
+    background-color: rgb(115, 11, 201);
 }
+/*Sub menu*/
+.menu-h ul ul{
+    display: none;
+    left:0;
+    position: absolute;
+
+}
+.menu-h ul li:hover ul{
+    display: block;
+    background-color:rgb(48, 49, 54) ;
+}
+.menu-h ul ul{
+    width: 100px;
+
+}
+.menu-h ul ul li a{
+    display:flex; 
+
+}
+
+
+
+
+
 /* Grid de Produtos*/
 .container{
     color: #eee;
@@ -52,27 +79,28 @@
 
 }
 #img-1{
-background-image: url('../IMG/Valheim.jpg');
-
+    background-image: url('../IMG/Valheim.jpg');
+    background-size: cover;
 }
 #img-2{
     background-image: url('../IMG/Skyrim.jpg');
- 
+    background-size: contain;
 }
 #img-3{
     background-image: url('../IMG/league.jpg');
-   
+    background-size: cover;
 }
 #img-4{
     background-image: url('../IMG/Genshin.jpg');
-
+    background-size: cover;
 }
 #img-5{
     background-image: url('../IMG/Valorant.jpg');
-
+    background-size: cover;
 }
 #img-6{
     background-image: url('../IMG/New\ word.jpg');
+    background-size: cover;
 
 }
 h3{
@@ -120,5 +148,3 @@ footer{
     padding: 80px;
 
 }
-
-
