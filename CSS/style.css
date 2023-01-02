@@ -13,6 +13,14 @@
     position: relative;
     
 }
+.menu-h ul:hover{
+       
+    color: rgb(122, 109, 122);
+    background-color: rgb(46, 43, 58);
+    transition: 2.0s;
+    
+    
+}
 .menu-h ul li{
     display: inline;
     position: relative;
